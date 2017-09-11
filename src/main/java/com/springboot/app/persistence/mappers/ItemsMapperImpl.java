@@ -40,7 +40,6 @@ public class ItemsMapperImpl implements ItemsMapper
             " OR (descripcion LIKE '%" + obj.getDescripcion() + "%') " +
             " ORDER BY id DESC ");
 
-    System.out.println(sql);
     return JdbcTemplate.query(sql, new BeanPropertyRowMapper(ItemsModel.class));
   }
 
