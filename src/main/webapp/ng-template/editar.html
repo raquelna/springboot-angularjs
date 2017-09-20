@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html lang="es">
-	<head>
-		<meta charset="utf-8"/>
-		<title>Index</title>
-		
-	</head>
-	
-	<body>
-		
-		
-
-	</body>
-		
-</html>
+<div id="contenido">
+	<form ng-repeat="x in bbdd">
+		<input ng-repeat="(key, value) in x" type="text" name="{{key}}" value="{{value}}"/>
+	</form>
+</div>
