@@ -23,8 +23,7 @@ public class ItemsMapperImpl implements ItemsMapper
   {
     String sql = UtilStr.removeSpaces(
             " SELECT * " +
-            " FROM items " +
-            " ORDER BY id DESC ");
+            " FROM items " );
 
     return JdbcTemplate.query(sql, new BeanPropertyRowMapper(ItemsModel.class));
   }
@@ -37,8 +36,7 @@ public class ItemsMapperImpl implements ItemsMapper
             " SELECT * " +
             " FROM items " +
             " WHERE (nombre LIKE   '%" + obj.getNombre() + "%') " +
-            " OR (descripcion LIKE '%" + obj.getDescripcion() + "%') " +
-            " ORDER BY id DESC ");
+            " OR (descripcion LIKE '%" + obj.getDescripcion() + "%') ");
 
     return JdbcTemplate.query(sql, new BeanPropertyRowMapper(ItemsModel.class));
   }

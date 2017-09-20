@@ -27,7 +27,7 @@
 
 #search #searchWrapper > input[type="text"]
 {
-  width: 250px;
+  width: 380px;
   float: left;
   padding-right: 45px;
 }
@@ -223,9 +223,9 @@
 {
   text-transform: uppercase;
   border-bottom: 1px solid rgba(50, 50, 50, 0.2);
-  white-space: nowrap;
+  white-space: rap;
   overflow: hidden;
-  text-overflow: ellipsis;
+  text-align: center;
 }
 
 #search #items article > * > div p, #search #items article > * > div p *

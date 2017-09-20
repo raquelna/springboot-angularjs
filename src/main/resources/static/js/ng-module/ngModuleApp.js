@@ -26,6 +26,11 @@ app.config(['$routeProvider', '$locationProvider',
     {
       templateUrl: GBL_COFG.urlTemplate('kirby.html')
     })
+    .when('/editar',
+    {
+      templateUrl: GBL_COFG.urlTemplate('editar.html'),
+      controller: 'ngAppControllerEditarBBDD'
+    })
     .when('/search',
     {
       templateUrl: GBL_COFG.urlTemplate('search.html'),
