@@ -1,5 +1,20 @@
-<div id="contenido">
+<div id="editarBBDD">
+
+
+<div id="lista">
+	<select>
+		<option ng-repeat="x in getbbdd track by $index">Tabla {{$index + 1}} | {{x.table}}</option>
+	</select>
+</div>
+
+
 	<form ng-repeat="x in bbdd">
 		<input ng-repeat="(key, value) in x" type="text" name="{{key}}" value="{{value}}"/>
 	</form>
+
+
+<div id="selcBBDD">
+	<input type="button" value="Seleccionar"/>
+</div>
+
 </div>

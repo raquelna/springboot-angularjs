@@ -14,9 +14,13 @@ app.controller('ngAppControllerEditarBBDD',
 		      .then(function (response)
 		      {
 		       var data = response.data;
+		     
 		      
+		       $scope.getbbdd = data;
+		       
 		       $scope.bbdd = data;
 		      });
+	 
 			})();
 	
 	
