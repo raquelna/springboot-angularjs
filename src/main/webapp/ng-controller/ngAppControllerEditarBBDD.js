@@ -7,7 +7,7 @@ app.controller('ngAppControllerEditarBBDD',
 			{
 		
 			
-	 $http.post('/getItems',
+	 $http.post('/test',
 		      {
 		        table: 'valor enviado por POST utilizando el modelo TESTMODEL'
 		      })
@@ -18,10 +18,48 @@ app.controller('ngAppControllerEditarBBDD',
 		      
 		       $scope.getbbdd = data;
 		       
-		       $scope.bbdd = data;
 		      });
 	 
 			})();
+	
+	
+	var select = document.querySelector('#listaTablas');
+	select.addEventListener('change',
+	  function(){
+	    var selectedOption = this.options[select.selectedIndex];
+	    console.log(selectedOption.value + ': ' + selectedOption.text);
+	    
+	  });
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+//	(function()
+//			{
+//		
+//			
+//	 $http.post('/getItems',
+//		      {
+//		        table: 'valor enviado por POST utilizando el modelo TESTMODEL'
+//		      })
+//		      .then(function (response)
+//		      {
+//		       var data = response.data;
+//		     
+//		      
+//		       $scope.bbdd = data;
+//		       
+//		      });
+//	 
+//			})();
 	
 	
   }]);
